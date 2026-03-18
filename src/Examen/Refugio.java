@@ -3,7 +3,7 @@ package Examen;
 import java.util.ArrayList;
 
 public class Refugio {
-    ArrayList<String> animal = new ArrayList<>();
+    ArrayList<String> animal;
     int CAPACIDAD_MAXIMA = 5;
 
     public Refugio(ArrayList<String> animal, int CAPACIDAD_MAXIMA) {
@@ -23,26 +23,27 @@ public class Refugio {
     }
 
     public void mostrarAnimales(ArrayList<Animal> a) {
-        for (Animal a1 : a) {
-            System.out.println(a1.toString());
+        for (Animal animal1 : a) {
+            System.out.println(animal1.toString());
         }
-        for (Animal a2 : a) {
-            System.out.println(a2.toString());
+        for (Animal animal2 : a) {
+            System.out.println(animal2.toString());
         }
-        for (Animal a3 : a) {
-            System.out.println(a3.toString());
+        for (Animal animal3 : a) {
+            System.out.println(animal3.toString());
         }
-        for (Animal a4 : a) {
-            System.out.println(a4.toString());
+        for (Animal animal4 : a) {
+            System.out.println(animal4.toString());
         }
-        for (Animal a5 : a) {
-            System.out.println(a5.toString());
+        for (Animal animal5 : a) {
+            System.out.println(animal5.toString());
         }
     }
 
     public void hacerConcierto(ArrayList<Animal> animales) {
-        for (Animal a : animales) {
-            animal.hacerSonido();
+        for (Animal animal : animales) {
+            Perro.hacerSonido();
+            Gato.hacerSonido();
         }
     }
 

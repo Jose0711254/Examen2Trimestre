@@ -9,7 +9,7 @@ public class Perro extends Animal {
         this.raza = raza;
     }
 
-    public void hacerSonido() {
+    public static void hacerSonido() {
         System.out.println("Guau Guau");
     }
 }

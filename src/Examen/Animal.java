@@ -37,7 +37,7 @@ public class Animal {
 
     }
 
-    public void hacerSonido (){
+    public static void hacerSonido (){
         System.out.println("El animal emite un sonido genérico");
     }
 
@@ -50,7 +50,8 @@ public class Animal {
                 '}';
     }
 
-    public static int calculadrEdadHumana (int edadAnimal){
-        
+    public static int calcularEdadHumana(int edadAnimal){
+        double edadMultiplicada = edadAnimal * 7;
+        return (int) edadMultiplicada;
     }
 }

@@ -8,7 +8,7 @@ public class Gato extends Animal {
         this.esCazador = esCazador;
     }
 
-    public void hacerSonido() {
+    public static void hacerSonido() {
         System.out.println("Miau Miau");
     }
 }
